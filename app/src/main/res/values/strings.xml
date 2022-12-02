@@ -12,6 +12,11 @@
     <string name="please_enter_your_username_and_password">Please enter your username and password</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="retype_password">Re-type Password</string>
     <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="address">Address</string>
+    <string name="name">Name</string>
+    <string name="next">Next</string>
 
 </resources>
