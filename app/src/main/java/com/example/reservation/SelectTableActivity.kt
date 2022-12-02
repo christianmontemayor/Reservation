@@ -29,16 +29,20 @@ class SelectTableActivity : AppCompatActivity(), SelectTableViewActivity.ItemCli
 
         if (oldbundle != null) {
             findViewById<TextView>(R.id.resName).text = oldbundle.getString("resName")
+            findViewById<TextView>(R.id.resEmail).text = oldbundle.getString("resEmail")
             findViewById<TextView>(R.id.resPhoneNumber).text = oldbundle.getString("resPhoneNumber")
             findViewById<TextView>(R.id.resDate).text = oldbundle.getString("resDate")
+            findViewById<TextView>(R.id.resTime).text = oldbundle.getString("resTime")
             findViewById<TextView>(R.id.resGuests).text = oldbundle.getString("resGuests")
         }
 
 
 
         bundle.putString("resName", findViewById<TextView>(R.id.resName).text.toString())
+        bundle.putString("resEmail", findViewById<TextView>(R.id.resEmail).text.toString())
         bundle.putString("resPhoneNumber", findViewById<TextView>(R.id.resPhoneNumber).text.toString())
         bundle.putString("resDate", findViewById<TextView>(R.id.resDate).text.toString())
+        bundle.putString("resTime", findViewById<TextView>(R.id.resTime).text.toString())
         bundle.putString("resGuests", findViewById<TextView>(R.id.resGuests).text.toString())
 
 

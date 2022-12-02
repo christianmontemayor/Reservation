@@ -37,6 +37,20 @@
 " />
 
     <TextView
+        android:id="@+id/resEmail"
+        android:layout_width="244dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:hint="@string/email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resName"
+        app:layout_constraintVertical_bias="0.05
+" />
+
+    <TextView
         android:id="@+id/resPhoneNumber"
         android:layout_width="244dp"
         android:layout_height="66dp"
@@ -46,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resName"
+        app:layout_constraintTop_toBottomOf="@+id/resEmail"
         app:layout_constraintVertical_bias="0.05
 " />
 
@@ -64,6 +78,19 @@
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
+        android:id="@+id/resTime"
+        android:layout_width="244dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:hint="@string/time_of_reservation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resDate"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
         android:id="@+id/resGuests"
         android:layout_width="244dp"
         android:layout_height="66dp"
@@ -73,7 +100,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resDate"
+        app:layout_constraintTop_toBottomOf="@+id/resTime"
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
@@ -87,19 +114,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resGuests"
-        app:layout_constraintVertical_bias="0.05" />
-
-    <TextView
-        android:id="@+id/resSize"
-        android:layout_width="244dp"
-        android:layout_height="66dp"
-        android:ems="10"
-        android:hint="Table Size"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resTable"
         app:layout_constraintVertical_bias="0.05" />
 
     <Button

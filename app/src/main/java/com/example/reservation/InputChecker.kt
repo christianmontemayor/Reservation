@@ -19,6 +19,7 @@ fun isDateValid(date: String): Boolean {
     }
 }
 
+
 fun isGuestsValid(guests: String): Boolean {
     return try {
         Integer.parseInt(guests) in 1 .. 99

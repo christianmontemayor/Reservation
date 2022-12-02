@@ -24,8 +24,10 @@ class BeginReservationActivity : AppCompatActivity() {
         val btnSubmit: Button = findViewById(R.id.btnSubmit)
         btnSubmit.setOnClickListener {
             val reservationName = findViewById<EditText>(R.id.resName).text
+            val reservationEmail = findViewById<EditText>(R.id.editTextEmail).text
             val reservationPhoneNumber = findViewById<EditText>(R.id.editTextPhone).text
             val reservationDate = findViewById<EditText>(R.id.editTextDate).text
+            val reservationTime = findViewById<EditText>(R.id.editTextTime).text
             val reservationSize = findViewById<EditText>(R.id.editGuests).text
 
             if(reservationName.isEmpty() || reservationPhoneNumber.isEmpty() || reservationDate.isEmpty() || reservationSize.isEmpty()) {
@@ -46,11 +48,20 @@ class BeginReservationActivity : AppCompatActivity() {
                     "Please enter a valid amount of guests",
                     Toast.LENGTH_SHORT).show()
             } else {
+
+                if(reservationDate.toString() == "07/4/23"){
+                    Toast.makeText(applicationContext,
+                        "Holiday reservation: valid credit card is necessary, hold fee required, and $10 no show fee",
+                        Toast.LENGTH_LONG).show()
+                }
+
                 val bundle = Bundle()
 
                 bundle.putString("resName", findViewById<EditText>(R.id.resName).text.toString())
                 bundle.putString("resPhoneNumber", findViewById<EditText>(R.id.editTextPhone).text.toString())
+                bundle.putString("resEmail", findViewById<EditText>(R.id.editTextEmail).text.toString())
                 bundle.putString("resDate", findViewById<EditText>(R.id.editTextDate).text.toString())
+                bundle.putString("resTime", findViewById<EditText>(R.id.editTextTime).text.toString())
                 bundle.putString("resGuests", findViewById<EditText>(R.id.editGuests).text.toString())
 
                 if (oldBundle != null) {

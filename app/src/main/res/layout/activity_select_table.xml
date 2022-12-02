@@ -17,6 +17,12 @@
         />
 
     <TextView
+        android:id="@+id/resEmail"
+        android:layout_width="244dp"
+        android:layout_height="66dp"
+        />
+
+    <TextView
         android:id="@+id/resPhoneNumber"
         android:layout_width="244dp"
         android:layout_height="66dp"
@@ -25,6 +31,12 @@
 
     <TextView
         android:id="@+id/resDate"
+        android:layout_width="244dp"
+        android:layout_height="66dp"
+        />
+
+    <TextView
+        android:id="@+id/resTime"
         android:layout_width="244dp"
         android:layout_height="66dp"
         />
