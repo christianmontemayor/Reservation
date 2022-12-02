@@ -53,7 +53,7 @@ class SelectTableViewActivity internal constructor(context: Context?, data: Arra
         }
 
         override fun onClick(view: View?) {
-            if (mClickListener != null) mClickListener!!.onItemClick(view, adapterPosition)
+            if (mClickListener != null) mClickListener!!.onItemClick(view, adapterPosition,getItem(adapterPosition).toInt())
         }
     }
 
@@ -69,7 +69,7 @@ class SelectTableViewActivity internal constructor(context: Context?, data: Arra
 
     // parent activity will implement this method to respond to click events
     interface ItemClickListener {
-        fun onItemClick(view: View?, position: Int)
+        fun onItemClick(view: View?, position: Int, id: Int)
     }
 }
 

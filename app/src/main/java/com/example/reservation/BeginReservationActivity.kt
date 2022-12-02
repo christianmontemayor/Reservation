@@ -51,9 +51,9 @@ class BeginReservationActivity : AppCompatActivity() {
             } else {
                 val bundle = Bundle()
                 bundle.putString("resName", findViewById<EditText>(R.id.resName).text.toString())
-                bundle.putString("phone", findViewById<EditText>(R.id.editTextPhone).text.toString())
-                bundle.putString("date", findViewById<EditText>(R.id.editTextDate).text.toString())
-                bundle.putString("guests", findViewById<EditText>(R.id.editGuests).text.toString())
+                bundle.putString("resPhoneNumber", findViewById<EditText>(R.id.editTextPhone).text.toString())
+                bundle.putString("resDate", findViewById<EditText>(R.id.editTextDate).text.toString())
+                bundle.putString("resGuests", findViewById<EditText>(R.id.editGuests).text.toString())
                 if (oldBundle != null) {
                     bundle.putString("user", oldBundle.get("username") as String?)
                 }

@@ -5,8 +5,8 @@ import androidx.room.*
 
 
 @Database(
-    entities = [User::class],
-    version = 1,
+    entities = [User::class, Reservation::class],
+    version = 2,
     exportSchema = true
 )
 abstract class UserDatabase : RoomDatabase() {
