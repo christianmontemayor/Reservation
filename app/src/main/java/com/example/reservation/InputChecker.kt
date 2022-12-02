@@ -4,9 +4,8 @@ import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.Locale
 
-fun isPhoneValid(number: String): Boolean {
-    return number.length in 10..11 &&
-            android.util.Patterns.PHONE.matcher(number).matches()
+fun isPhoneNumberValid(number: String): Boolean {
+    return number.length in 10..11
 }
 
 fun isDateValid(date: String): Boolean {
@@ -22,7 +21,7 @@ fun isDateValid(date: String): Boolean {
 
 fun isGuestsValid(guests: String): Boolean {
     return try {
-        Integer.parseInt(guests) <= 99
+        Integer.parseInt(guests) in 1 .. 99
     } catch (e: Exception) {
         false
     }

@@ -33,7 +33,7 @@ class BeginReservationActivity : AppCompatActivity() {
                     "Please enter all fields",
                     Toast.LENGTH_SHORT).show()
             }
-            else if(!isPhoneValid(reservationPhoneNumber.toString())) {
+            else if(!isPhoneNumberValid(reservationPhoneNumber.toString())) {
                 Toast.makeText(applicationContext,
                     "Please enter a valid phone number",
                     Toast.LENGTH_SHORT).show()
