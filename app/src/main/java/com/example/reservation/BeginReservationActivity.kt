@@ -47,10 +47,12 @@ class BeginReservationActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT).show()
             } else {
                 val bundle = Bundle()
-                bundle.putString("resName", reservationName.toString())
-                bundle.putString("phone", reservationPhoneNumber.toString())
-                bundle.putString("date", reservationDate.toString())
-                bundle.putString("guests", reservationSize.toString())
+
+                bundle.putString("resName", findViewById<EditText>(R.id.resName).text.toString())
+                bundle.putString("resPhoneNumber", findViewById<EditText>(R.id.editTextPhone).text.toString())
+                bundle.putString("resDate", findViewById<EditText>(R.id.editTextDate).text.toString())
+                bundle.putString("resGuests", findViewById<EditText>(R.id.editGuests).text.toString())
+
                 if (oldBundle != null) {
                     bundle.putString("user", oldBundle.get("username") as String?)
                 }

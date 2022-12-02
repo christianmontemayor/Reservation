@@ -15,3 +15,14 @@ data class User(
     val earnedPoints: Int,
     val preferredPaymentMethod: Int
 )
+
+@Entity(tableName = "reservation_table")
+data class Reservation(
+    @PrimaryKey(autoGenerate = true)
+    val preferredResId: Int,
+    val name: String,
+    val phoneNumber: String,
+    val date: String,
+    val numberGuest: String,
+    val tableNumber: String
+)

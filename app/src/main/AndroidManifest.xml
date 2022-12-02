@@ -32,6 +32,10 @@
         </activity>
         <activity android:name=".SelectTableActivity">
         </activity>
+        <activity android:name=".SelectTableViewActivity">
+        </activity>
+        <activity android:name=".ConfirmReservationActivity">
+        </activity>
     </application>
 
 </manifest>
