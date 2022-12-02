@@ -30,6 +30,8 @@
         </activity>
         <activity android:name=".BeginReservationActivity">
         </activity>
+        <activity android:name=".BeginRegistrationActivity">
+        </activity>
         <activity android:name=".SelectTableActivity">
         </activity>
     </application>
