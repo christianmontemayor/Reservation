@@ -6,7 +6,7 @@
     <string name="please_fill_out_the_following_information">Please fill out the following information</string>
     <string name="name_of_reservation">Name of Reservation</string>
     <string name="phone_number">Phone Number</string>
-    <string name="date_of_reservation">Date (dd/mm/yy)</string>
+    <string name="date_of_reservation">Date (mm/dd/yy)</string>
     <string name="number_guests">Number of Guests</string>
     <string name="submit">Submit</string>
     <string name="please_enter_your_username_and_password">Please enter your username and password</string>
