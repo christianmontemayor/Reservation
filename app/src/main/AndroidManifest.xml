@@ -36,6 +36,10 @@
         </activity>
         <activity android:name=".ConfirmReservationActivity">
         </activity>
+        <activity android:name=".BeginRegistrationActivity">
+        </activity>
+        <activity android:name=".FinishRegistrationActivity">
+        </activity>
     </application>
 
 </manifest>
