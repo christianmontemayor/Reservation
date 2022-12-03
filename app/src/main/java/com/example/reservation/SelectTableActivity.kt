@@ -67,7 +67,7 @@ class SelectTableActivity : AppCompatActivity(), SelectTableViewActivity.ItemCli
 
         // set up the RecyclerView
         val recyclerView = findViewById<RecyclerView>(R.id.rvNumbers)
-        val numberOfColumns = 6
+        val numberOfColumns = 4
         recyclerView.layoutManager = GridLayoutManager(this, numberOfColumns)
         adapter = SelectTableViewActivity(this, data)
         adapter!!.setClickListener(this)
@@ -86,8 +86,14 @@ class SelectTableActivity : AppCompatActivity(), SelectTableViewActivity.ItemCli
         if (oldBundle != null) {
 
             val numGuests = oldBundle.getString("resGuests")
-            val exists = userDatabase.exists((position + 1).toString())
-            if (numGuests != null) {
+            val date = oldBundle.getString("resDate")
+            val time = oldBundle.getString("resTime")
+
+            if (numGuests != null && date != null && time !=null) {
+                val table_string = (position + 1).toString()
+                val date_string =  date.replace("/","")
+                val time_string =  time.replace(":","")
+                val exists = userDatabase.exists((table_string + date_string + time_string).toInt())
                 if (numGuests.toInt() <= size && !exists) {
                     val intent = Intent(this, ConfirmReservationActivity::class.java)
                     oldBundle.putString("resTable", (position + 1).toString())

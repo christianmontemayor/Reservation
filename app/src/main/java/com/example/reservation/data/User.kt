@@ -21,8 +21,10 @@ data class Reservation(
     @PrimaryKey(autoGenerate = true)
     val preferredResId: Int,
     val name: String,
+    val email: String,
     val phoneNumber: String,
     val date: String,
+    val time: String,
     val numberGuest: String,
     val tableNumber: String
 )
