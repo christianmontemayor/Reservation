@@ -26,7 +26,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".LogInActivity">cd projects
+            android:name=".LogInActivity">
         </activity>
         <activity android:name=".BeginReservationActivity">
         </activity>
