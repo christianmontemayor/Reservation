@@ -26,11 +26,13 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".LogInActivity">
+            android:name=".LogInActivity">cd projects
         </activity>
         <activity android:name=".BeginReservationActivity">
         </activity>
         <activity android:name=".BeginRegistrationActivity">
+        </activity>
+        <activity android:name=".FinishRegistrationActivity">
         </activity>
         <activity android:name=".SelectTableActivity">
         </activity>

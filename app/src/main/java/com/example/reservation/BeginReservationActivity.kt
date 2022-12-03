@@ -2,7 +2,6 @@ package com.example.reservation
 
 import android.content.Intent
 import android.os.Bundle
-import android.provider.Settings.System.DATE_FORMAT
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -25,7 +24,7 @@ class BeginReservationActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.welcome).text = str
         }
 
-        val btnSubmit: Button = findViewById(R.id.btnSubmit)
+        val btnSubmit: Button = findViewById(R.id.Submitbtn)
         btnSubmit.setOnClickListener {
             if(findViewById<EditText>(R.id.resName).text.isEmpty() ||
                 findViewById<EditText>(R.id.editTextPhone).text.isEmpty() ||
