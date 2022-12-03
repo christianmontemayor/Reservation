@@ -10,6 +10,8 @@ import android.widget.Toast
 import com.example.reservation.data.Reservation
 import com.example.reservation.data.User
 import com.example.reservation.data.UserDatabase
+import java.text.SimpleDateFormat
+import java.util.*
 
 class ConfirmReservationActivity : AppCompatActivity() {
     private val userDatabase by lazy { UserDatabase.getDatabase(this).userDao() }
@@ -31,7 +33,7 @@ class ConfirmReservationActivity : AppCompatActivity() {
         }
 
         try {
-            userDatabase.addReservation(Reservation(5,"John Doe", "2819487217","12/2/22","2","5") )
+            userDatabase.addReservation(Reservation(5346734,"John Doe", "example@gmail.com", "2819487217","12/2/22","2:00","5","2") )
 
         } catch(e: java.lang.Exception) {
             println(e.toString())
@@ -40,17 +42,21 @@ class ConfirmReservationActivity : AppCompatActivity() {
                 Toast.LENGTH_LONG).show()
         }
 
+
+
         val btnLogin: Button = findViewById(R.id.btnConfirm)
         btnLogin.setOnClickListener {
             val name = findViewById<TextView>(R.id.resName).text.toString()
+            val email = findViewById<TextView>(R.id.resEmail).text.toString()
             val phoneNumber = findViewById<TextView>(R.id.resPhoneNumber).text.toString()
             val date = findViewById<TextView>(R.id.resDate).text.toString()
+            val time = findViewById<TextView>(R.id.resTime).text.toString()
             val guests = findViewById<TextView>(R.id.resGuests).text.toString()
             val table = findViewById<TextView>(R.id.resTable).text.toString()
 
-            val tableNum = table.toInt()
+            val id = table + date.replace("/","") + time
 
-            userDatabase.addReservation(Reservation(tableNum,name,phoneNumber,date,guests,table) )
+            userDatabase.addReservation(Reservation(id.toInt(),name,email,phoneNumber,date,time,guests,table) )
 
             val intent = Intent(this, MainActivity::class.java)
 
