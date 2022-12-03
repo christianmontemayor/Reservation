@@ -5,48 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/info"
-        android:layout_width="244dp"
-        android:layout_height="66dp" />
-
-    <TextView
-        android:id="@+id/resName"
-        android:layout_width="244dp"
-        android:layout_height="66dp"
-        />
-
-    <TextView
-        android:id="@+id/resEmail"
-        android:layout_width="244dp"
-        android:layout_height="66dp"
-        />
-
-    <TextView
-        android:id="@+id/resPhoneNumber"
-        android:layout_width="244dp"
-        android:layout_height="66dp"
-        />
-
-
-    <TextView
-        android:id="@+id/resDate"
-        android:layout_width="244dp"
-        android:layout_height="66dp"
-        />
-
-    <TextView
-        android:id="@+id/resTime"
-        android:layout_width="244dp"
-        android:layout_height="66dp"
-        />
-
-    <TextView
-        android:id="@+id/resGuests"
-        android:layout_width="244dp"
-        android:layout_height="66dp"
-        />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvNumbers"
         android:layout_width="match_parent"
