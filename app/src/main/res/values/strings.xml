@@ -16,5 +16,10 @@
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="please_confirm_your_reservation_information">Please Confirm Your Reservation Information</string>
+    <string name="retype_password">Re-type Password</string>
+    <string name="register">Register</string>
+    <string name="address">Address</string>
+    <string name="name">Name</string>
+    <string name="next">Next</string>
 
 </resources>
